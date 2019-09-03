@@ -1,0 +1,582 @@
+.header {
+    margin-bottom: 4px;
+    position: relative;
+}
+
+.header__logo {
+    font-family: 'langdon';
+    font-size: 32px;
+    line-height: 1;
+
+    display: block;
+
+    min-width: 260px;
+    padding: 24px 0;
+
+    text-align: center;
+    letter-spacing: 4px;
+
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.header__social {
+    display: flex;
+
+    min-width: 240px;
+    min-height: 80px;
+
+    align-items: center;
+}
+
+.header__icon {
+    position: relative;
+
+    padding: 30px;
+
+    transition: -webkit-filter 0.4s ease;
+    transition:         filter 0.4s ease;
+    transition:         filter 0.4s ease, -webkit-filter 0.4s ease;
+}
+
+.header__icon:hover {
+    -webkit-filter: brightness(0);
+            filter: brightness(0);
+}
+
+.header__icon::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 1px;
+    height: 100%;
+
+    content: '';
+
+    background-color: var(--blue);
+}
+
+/* Media queries */
+
+/* Small */
+@media (max-width: 375px) {
+    .header__logo {
+        width: 100%;
+    }
+
+    .header__social {
+        display: none;
+    }
+}
+
+.navigation {
+    position: relative;
+    display: flex;
+
+    height: 100%;
+
+    text-align: center;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation__hamburger {
+    display: none;
+}
+
+.navigation__menu {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.navigation__link {
+    font-family: 'lato-bold';
+    font-size: 12px;
+
+    position: relative;
+
+    padding: 16px 24px;
+
+    transition: background-color 0.4s ease;
+    text-transform: uppercase;
+
+    color: var(--dark);
+}
+
+.navigation__link:hover {
+    background-color: var(--blue);
+}
+
+.navigation__link::before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 70%;
+    height: 2px;
+    margin: auto;
+
+    content: '';
+    transition: opacity 0.4s ease;
+
+    opacity: 0;
+    background-color: var(--blue);
+}
+
+.navigation__link.router-link-active::before {
+    opacity: 1;
+}
+
+/* Media queries */
+
+/* Medium */
+@media (max-width: 768px) {
+    .navigation__hamburger {
+        display: block;
+    }
+
+    .navigation__menu {
+        background-color: var(--white);
+        position: absolute;
+        overflow: hidden;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        min-width: 200px;
+        text-align: left;
+        flex-direction: column;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.20);
+    }
+
+    .navigation__link.router-link-active {
+        background-color: var(--blue);
+    }
+
+    .navigation__link.router-link-active::before {
+        opacity: 0;
+    }
+}
+
+/* Media queries */
+
+/* Small */
+@media (max-width: 375px) {
+    .navigation {
+        position: absolute;
+        right: 20px;
+    }
+
+    .navigation__menu {
+        top: 38px;
+        left: auto;
+        right: 0;
+    }
+}
+
+.home {
+    width: 100vw;
+    height: auto;
+}
+
+.home-hero {
+    position: relative;
+
+    overflow: hidden;
+
+    margin-bottom: 4px;
+
+    background-color: var(--gray);
+}
+
+.home-hero__figure {
+    border-left: 4px solid var(--white);
+
+    -webkit-filter: saturate(0.78) contrast(1);
+            filter: saturate(0.78) contrast(1);
+}
+
+.home-about {
+    min-height: 366px;
+    margin-bottom: 4px;
+
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.home-projects {
+    position: relative;
+
+    overflow: hidden;
+
+    margin-bottom: 4px;
+}
+
+.home-projects__figure {
+    position: relative;
+}
+
+.home-projects__next {
+    position: absolute;
+    bottom: 40px;
+}
+
+.home-projects__image {
+    -webkit-filter: saturate(1) brightness(0.3) contrast(0.8);
+            filter: saturate(1) brightness(0.3) contrast(0.8);
+}
+
+.home-projects__button-look {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+
+.home-experience {
+    position: relative;
+
+    margin-bottom: 4px;
+
+    background-color: var(--gray);
+}
+
+.home-experience__figure {
+    position: relative;
+
+    border-right: 4px solid var(--white);
+
+    direction: rtl;
+}
+
+.home-experience__descriptions {
+    padding: 80px 0 50px 30px;
+}
+
+.home-experience__image {
+    -webkit-filter: saturate(1) brightness(0.5) contrast(0.8);
+            filter: saturate(1) brightness(0.5) contrast(0.8);
+}
+
+.home-experience__caption {
+    font-family: 'lato-bold';
+    font-size: 40px;
+    line-height: 1.1;
+
+    position: absolute;
+    top: 20%;
+    left: 0;
+
+    margin-bottom: 24px;
+
+    text-align: left;
+
+    color: var(--white);
+}
+
+.home-skills {
+    background-color: var(--gray-dark);
+}
+
+.home-skills__title {
+    padding-top: 193px;
+
+    color: var(--white);
+}
+
+.home-skills__descriptions {
+    padding: 100px 0;
+}
+
+.home-skills__skill {
+    font-family: 'lato-regular';
+
+    display: block;
+
+    width: 100%;
+    margin-bottom: 30px;
+
+    color: var(--white);
+    background-color: var(--gray-dark);
+}
+
+.home-skills__skill:last-child {
+    margin-bottom: 0;
+}
+
+.home-contact {
+    position: relative;
+
+    min-height: 643px;
+}
+
+.home-contact::before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    background-image: url('/assets/images/henry-stand.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+    -webkit-filter: saturate(0) brightness(0.5) contrast(0.8);
+            filter: saturate(0) brightness(0.5) contrast(0.8);
+}
+
+.home-contact__form {
+    padding-right: 70px;
+
+    color: var(--white);
+}
+
+.home-contact__confirm {
+    min-height: 400px;
+    margin-right: 70px;
+    color: var(--white);
+}
+
+.home-contact__address {
+    padding-top: 152px;
+
+    color: var(--white);
+}
+
+/* Media queries */
+
+/* Small */
+@media (max-width: 375px) {
+    .home-hero__description {
+        position: relative;
+        z-index: 1;
+
+        margin-top: 60%;
+        margin-bottom: 10px;
+    }
+
+    .home-hero__title {
+        margin-bottom: 20%;
+
+        color: var(--white);
+    }
+
+    .home-hero__figure {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+
+        min-width: 100%;
+
+        border: none;
+
+        -webkit-filter: saturate(0.78) brightness(0.6) contrast(0.8);
+                filter: saturate(0.78) brightness(0.6) contrast(0.8);
+    }
+
+    .home-hero__image {
+        width: 100%;
+    }
+
+    .home-about {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .home-about__title {
+        font-size: 24px;
+    }
+
+    .home-projects {
+        color: var(--white);
+        min-height: 680px;
+    }
+
+    .home-projects__description {
+        padding-top: 50px;
+    }
+
+    .home-projects__tags {
+        position: absolute;
+        bottom: 35%;
+    }
+
+    .home-projects__figure {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+    }
+
+    .home-projects__image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .home-projects__button-look {
+        color: var(--black);
+        border-color: var(--black);
+        background-image: url('/assets/images/arrow-black.svg');
+
+        transform: none;
+        bottom: -205px;
+        left: 20px;
+    }
+
+    .home-experience__figure {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        overflow: hidden;
+
+        border: none;
+    }
+
+    .home-experience__image {
+        height: 100%;
+
+        -webkit-transform: translateX(20%);
+                transform: translateX(20%);
+    }
+
+    .home-experience__caption {
+        top: 52px;
+        left: 20px;
+    }
+
+    .home-experience__descriptions {
+        position: relative;
+
+        padding: 160px 0 40px 0;
+
+        background-color: transparent;
+    }
+
+    .home-experience__title {
+        position: relative;
+
+        margin: 20px 0 20px -20px;
+        padding: 20px 20px 0;
+
+        background-color: var(--gray);
+    }
+
+    .home-experience__title::before {
+        position: absolute;
+        top: 0;
+        right: -40px;
+
+        width: 40px;
+        height: 2px;
+
+        content: '';
+
+        background-color: var(--gray);
+    }
+
+    .home-experience__description {
+        color: var(--white);
+    }
+
+    .home-skills__title {
+        padding-top: 53px;
+    }
+
+    .home-skills__descriptions {
+        padding: 25px 0 56px;
+    }
+
+    .home-skills__bar {
+        width: 272px;
+    }
+
+    .home-contact {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        background-color: var(--white);
+    }
+
+    .home-contact::before {
+        background-image: none;
+    }
+
+    .home-contact__form {
+        width: 90%;
+        padding-right: 0;
+
+        color: inherit;
+    }
+
+    .home-contact__submit {
+        color: var(--black);
+        border-color: var(--black);
+        background-image: url('/assets/images/arrow-black.svg');
+    }
+
+    .home-contact__confirm {
+        color: inherit;
+    }
+
+    .home-contact__address {
+        padding-top: 30px;
+
+        color: inherit;
+    }
+}
+
+/* Retina */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .home-contact::before {
+        background-image: url('/assets/images/henry-stand@2x.jpg');
+    }
+}
+
+.footer {
+    background-color: var(--gray);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Media queries */
+
+/* Medium */
+@media (max-width: 768px) {
+    .footer {
+        background-color: var(--black);
+        color: var(--white);
+    }
+}
+
+/* Small */
+@media (max-width: 375px) {
+    .footer {
+        background-color: var(--gray);
+        color: inherit;
+    }
+}

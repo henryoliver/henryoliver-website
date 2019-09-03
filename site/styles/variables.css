@@ -1,0 +1,32 @@
+:root {
+    /* Media querie */
+    --small: 375px;
+    --medium: 768px;
+    --large: 1024px;
+    --beyond: 1440px;
+
+    /* Font base */
+    --base: 16px;
+
+    /* Flex system */
+    --basis: 6;
+    --gutter: 34px;
+
+    /* Colors */
+    --black: #000000;
+    --dark: #2b2b2b;
+    --white: #ffffff;
+
+    --gray-dark: #2d2d2d;
+    --gray: #f6f6f6;
+
+    --green: #7effe9;
+
+    --blue-dark: #a7aeb4;
+    --blue: #e5ebf0;
+
+    --red: #f94545;
+    --red-light: #ff7777;
+
+    --cdn: 'http://cdn.henry-oliver.com';
+}

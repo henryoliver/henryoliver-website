@@ -1,0 +1,13 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+    Henry Oliver -- Dev Team -- @Henry Oliver
+
+# THANKS
+
+    Henry Oliver Team
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5 and JavaScript

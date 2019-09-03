@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>interface</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="desktop" transform="translate(-633.000000, -868.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="beliefs" transform="translate(0.000000, 638.000000)">
+                <g id="interface" transform="translate(633.000000, 230.000000)">
+                    <path d="M36.75,0.25 L1.25,0.25 C0.69725,0.25 0.25,0.697265 0.25,1.25 L0.25,36.75 C0.25,37.015625 0.35547,37.26955 0.54297,37.45705 C0.73047,37.64455 0.984375,37.75002 1.25002,37.75002 L36.75002,37.75002 C37.015645,37.75002 37.26957,37.64455 37.45707,37.45705 C37.64457,37.26955 37.75004,37.015645 37.75004,36.75 L37.75004,1.25 C37.75004,0.984375 37.64457,0.73045 37.45707,0.54295 C37.26957,0.35545 37.015665,0.24998 36.75002,0.24998 L36.75,0.25 Z M35.75,2.25 L35.75,21.875 L2.25,21.875 L2.25,2.25 L35.75,2.25 Z M2.25,23.875 L18,23.875 L18,35.75 L2.25,35.75 L2.25,23.875 Z M35.75,35.75 L20,35.75 L20,23.875 L35.75,23.875 L35.75,35.75 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

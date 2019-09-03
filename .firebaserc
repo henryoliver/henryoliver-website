@@ -1,5 +1,14 @@
 {
   "projects": {
-    "default": "henry-oliver-site"
+    "default": "henry-oliver-project"
+  },
+  "targets": {
+    "henry-oliver-project": {
+      "hosting": {
+        "site": [
+          "henry-oliver-project"
+        ]
+      }
+    }
   }
 }

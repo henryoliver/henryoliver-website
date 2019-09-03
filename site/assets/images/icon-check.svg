@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+<title>check</title>
+<desc>Created with Sketch.</desc>
+<defs></defs>
+<g id="home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="desktop" transform="translate(-80.000000, -4356.000000)" fill="#7CCB75" fill-rule="nonzero">
+        <g id="formSuccess" transform="translate(78.000000, 4356.000000)">
+            <g id="check" transform="translate(2.000000, 0.000000)">
+                <path d="M20.041,0.248 C9.123,0.248 0.25,9.121 0.25,20.039 C0.25,30.957 9.123,39.83 20.041,39.83 C30.959,39.83 39.832,30.957 39.832,20.039 C39.832,9.121 30.959,0.248 20.041,0.248 Z M20.041,2.332 C29.834,2.332 37.75,10.248 37.75,20.041 C37.75,29.834 29.834,37.754 20.041,37.754 C10.248,37.754 2.332,29.834 2.332,20.041 C2.332,10.248 10.248,2.332 20.041,2.332 Z" id="Shape"></path>
+                <polygon id="Shape" points="28.037 12.9395 17.3845 24.1995 11.9645 19.0725 10.53285 20.58615 17.46635 27.14465 29.55035 14.37115"></polygon>
+            </g>
+        </g>
+    </g>
+</g>

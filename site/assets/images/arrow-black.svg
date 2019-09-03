@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="16px" viewBox="0 0 9 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>go</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="desktop" transform="translate(-247.000000, -1417.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="portfolio" transform="translate(0.000000, 998.000000)">
+                <g id="darkBtn" transform="translate(80.000000, 388.000000)">
+                    <path d="M168.396096,31.2247237 C168.101594,30.9301663 167.618718,30.924362 167.317286,31.2121276 C167.015854,31.4998932 167.009914,31.9717756 167.304396,32.2663331 L174.158011,38.9636386 L167.304396,45.6609441 C167.1279,45.7907825 167.016849,45.9884423 167.001974,46.2035499 C166.986109,46.4186549 167.066426,46.6298954 167.223089,46.7819986 C167.378763,46.9350916 167.594911,47.0135741 167.815039,46.9980711 C168.035164,46.9835369 168.23745,46.8750168 168.370308,46.7025463 L175.782112,39.4848353 C176.072629,39.1951148 176.072629,38.7319589 175.782112,38.4422633 L168.396096,31.2247237 Z" id="go"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
