@@ -104,7 +104,6 @@
     background-color: var(--black);
 }
 
-
 .button-hamburger::before {
     -webkit-transform: translateY(14px) rotate(-15deg);
             transform: translateY(14px) rotate(-15deg);
@@ -115,12 +114,14 @@
             transform: translateY(28px);
 }
 
-.button-hamburger--active::before {
+.button-hamburger:focus::before,
+.button-hamburger:active::before {
     -webkit-transform: rotate(0deg) translateY(4px);
             transform: rotate(0deg) translateY(4px);
 }
 
-.button-hamburger--active::after {
+.button-hamburger:focus::after,
+.button-hamburger:active::after {
     -webkit-transform: translateY(8px);
             transform: translateY(8px);
 }

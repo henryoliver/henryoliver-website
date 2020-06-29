@@ -3,7 +3,7 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('../fonts/lato-regular.woff2') format('woff2');
+    src: url('../assets/fonts/lato-regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -11,7 +11,7 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('../fonts/lato-bold.woff2') format('woff2');
+    src: url('../assets/fonts/lato-bold.woff2') format('woff2');
 }
 
 @font-face {
@@ -19,7 +19,7 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('../fonts/lato-light.woff2') format('woff2');
+    src: url('../assets/fonts/lato-light.woff2') format('woff2');
 }
 
 @font-face {
@@ -27,7 +27,7 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('../fonts/langdon.woff2') format('woff2');
+    src: url('../assets/fonts/langdon.woff2') format('woff2');
 }
 
 html {

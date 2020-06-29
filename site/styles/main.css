@@ -1,3 +1,18 @@
+/* Styles */
+@import "variables.css";
+@import "base.css";
+@import "theme.css";
+@import "layout.css";
+@import "state.css";
+
+/* UI Components */
+@import "ui/bars.css";
+@import "ui/buttons.css";
+@import "ui/forms.css";
+@import "ui/images.css";
+@import "ui/lists.css";
+@import "ui/tags.css";
+
 .header {
     margin-bottom: 4px;
     position: relative;
@@ -23,7 +38,6 @@
 .header__social {
     display: flex;
 
-    min-width: 240px;
     min-height: 80px;
 
     align-items: center;
@@ -129,7 +143,7 @@
     background-color: var(--blue);
 }
 
-.navigation__link.router-link-active::before {
+.navigation__link:focus::before {
     opacity: 1;
 }
 
@@ -149,16 +163,17 @@
         top: 0;
         left: 0;
         min-width: 200px;
+
         text-align: left;
         flex-direction: column;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.20);
     }
 
-    .navigation__link.router-link-active {
+    .navigation__link:focus {
         background-color: var(--blue);
     }
 
-    .navigation__link.router-link-active::before {
+    .navigation__link:focus::before {
         opacity: 0;
     }
 }

@@ -7,8 +7,8 @@
     <meta name="description" content="UX Experience Designer and Front End Developer based in Orlando, Florida.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="apple-touch-icon" href="assets/images/icon.png">
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/favicons/icon.png">
+    <link rel="shortcut icon" href="assets/images/favicons/favicon.ico">
 
     <link rel="stylesheet" href="styles/main.css">
 
@@ -27,38 +27,37 @@
 
         <!-- Main navigation -->
         <div class="navigation" v-click-outside="close">
-            <button class="button-hamburger navigation__hamburger" :class="{ 'button-hamburger--active': navigation }" @click="toggle"></button>
-            <nav class="navigation__menu" v-show="navigation" role="navigation">
-                <router-link class="navigation__link" :to="{ hash: 'about' }">About</router-link>
-                <router-link class="navigation__link" :to="{ hash: 'projects' }">Projects</router-link>
-                <router-link class="navigation__link" :to="{ hash: 'work' }">Work experience</router-link>
-                <router-link class="navigation__link" :to="{ hash: 'contact' }">Contact</router-link>
+            <button class="button-hamburger navigation__hamburger"></button>
+            <nav class="navigation__menu" role="navigation">
+                <a href="#about" class="navigation__link js-scroll">About</a>
+                <a href="#projects" class="navigation__link js-scroll">Projects</a>
+                <a href="#work" class="navigation__link js-scroll">Work Experience</a>
+                <a href="#contact" class="navigation__link js-scroll">Contact</a>
             </nav>
         </div>
 
         <!-- Social navigation -->
         <nav class="header__social" role="navigation">
             <a href="https://github.com/henryoliver" class="header__icon" target="_blank"><i class="icon-github"></i></a>
-            <a href="https://www.linkedin.com/in/henry-oliver-1ab937159" class="header__icon" target="_blank"><i class="icon-linkedin"></i></a>
-            <a href="https://twitter.com/henry_s_oliver" class="header__icon" target="_blank"><i class="icon-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/henry-oliver" class="header__icon" target="_blank"><i class="icon-linkedin"></i></a>
         </nav>
     </header>
 
     <!-- Hero -->
-    <section id="about" class="box flex middle home-hero">
+    <section class="box flex middle home-hero" name="about">
         <article class="flex-2 flex-3-md flex-6-sm home-hero__description">
             <hgroup class="home-hero__title">
                 <h4>Hello, my name is</h4>
                 <h1>Henry Oliver</h1>
             </hgroup>
-            <p>I'm a <strong>UX Experience Designer</strong> and<br><strong>Front End Developer</strong> based in Orlando, Florida.</p>
+            <p>I'm a <strong>Front-End Developer</strong> based in <br> Orlando, Florida.</p>
             <p>I live to deliver delightful and usable digital products made possible by solid and reliable code.</p>
         </article>
         <figure class="flex-4 flex-3-md home-hero__figure">
             <picture>
                 <source media="(max-width: 375px)" srcset="/assets/images/henry-computer-small.jpg 1x, /assets/images/henry-computer-small@2x.jpg 2x" />
                 <source media="(max-width: 768px)" srcset="/assets/images/henry-computer-medium.jpg 1x, /assets/images/henry-computer-medium@2x.jpg 2x" />
-                <img class="home-hero__image" v-lazy="'/assets/images/henry-computer.jpg'" data-srcset="/assets/images/henry-computer.jpg 1x, /assets/images/henry-computer@2x.jpg 2x" alt="Henry Oliver" />
+                <img class="home-hero__image" src="/assets/images/henry-computer.jpg" data-srcset="/assets/images/henry-computer.jpg 1x, /assets/images/henry-computer@2x.jpg 2x" alt="Henry Oliver" />
             </picture>
         </figure>
     </section>
@@ -85,77 +84,50 @@
     </aside>
 
     <!-- Projects -->
-    <section id="projects" class="box home-projects">
-        <transition-group type="transition" tag="div" name="slide-right">
-            <div class="flex middle" v-show="project === 1" :key="1">
+    <section class="box home-projects" name="projects">
+        <ul>
+            <li class="flex middle">
                 <article class="flex-4 flex-6-sm last-sm home-projects__description">
-                    <h1>Glasstone Travel</h1>
-                    <p>Glasstone Travel is a vacation rental marketplace with high-end properties in Florida. This client approached me to develop their new web channel. The result is a modern and responsive website that has been an effective marketing tool and sales channel for the company.</p>
+                    <h1>PhotoDay</h1>
+                    <p>PhotoDay® was born from a unique concept between open-minded creatives, visionaries, engineers and developers who are passionate about photography. The result is a modern and responsive website that has been an effective marketing tool and sales channel for the company.</p>
                     <ul class="flex home-projects__tags">
-                        <li class="tag">UX design</li>
                         <li class="tag">HTML5 / CSS3</li>
-                        <li class="tag">PWA / Vue.js</li>
-                        <li class="tag">AI assistant</li>
+                        <li class="tag">React</li>
+                        <li class="tag">Redux / Redux Saga</li>
                     </ul>
                 </article>
                 <figure class="flex-2 flex-6-sm home-projects__figure">
-                    <img class="home-projects__image" v-lazy="'/assets/images/projects-glasstone.jpg'" alt="Project Glasstone Travel" />
-                    <a href="https://glasstonetravel.com" class="button button--bright home-projects__button-look" target="_blank">Take a look</a>
+                    <img class="home-projects__image" src="/assets/images/projects-photoday.jpg" alt="Project PhotoDay" />
+                    <a href="https://www.photoday.io" class="button button--bright home-projects__button-look" target="_blank">Take a look</a>
                 </figure>
-            </div>
-            <div class="flex middle" v-show="project === 2" :key="2">
-                <article class="flex-4 flex-6-sm last-sm home-projects__description">
-                    <h1>Playlana</h1>
-                    <p>Playlana is an app specially designed for students that need to memorize content for specifics tests and exams. They were looking for a straight-to-the-point landing page, that could clearly tell visitors what the app is about and increase app downloads.</p>
-                    <ul class="flex home-projects__tags">
-                        <li class="tag">UX design</li>
-                        <li class="tag">HTML5 / CSS3</li>
-                        <li class="tag">PHP</li>
-                        <li class="tag">Wordpress</li>
-                    </ul>
-                </article>
-                <figure class="flex-2 flex-6-sm home-projects__figure">
-                    <img class="home-projects__image" v-lazy="'/assets/images/projects-playlana.jpg'" alt="Project Playlana" />
-                    <a href="#" class="button button--bright home-projects__button-look" target="_blank">Take a look</a>
-                </figure>
-            </div>
-            <div class="flex middle" v-show="project === 3" :key="3">
-                <article class="flex-4 flex-6-sm last-sm home-projects__description">
-                    <h1>Panoply MMA</h1>
-                    <p>Panoply MMA is a legendary fighting center based in Orlando. As their first online initiative, I helped them develop an effective channel that has been an important marketing and sales channel.</p>
-                    <ul class="flex home-projects__tags">
-                        <li class="tag">UX design</li>
-                        <li class="tag">HTML5 / CSS3</li>
-                        <li class="tag">PWA / React</li>
-                        <li class="tag">AI assistant</li>
-                    </ul>
-                </article>
-                <figure class="flex-2 flex-6-sm home-projects__figure">
-                    <img class="home-projects__image" v-lazy="'/assets/images/projects-mma.jpg'" alt="Project Panoply MMA" />
-                    <a href="#" class="button button--bright home-projects__button-look" target="_blank">Take a look</a>
-                </figure>
-            </div>
-        </transition-group>
-        <button class="button home-projects__next" name="button" @click="next">Next project</button>
+            </li>
+        </ul>
     </section>
 
     <!-- Work experience -->
-    <article id="work" class="box flex home-experience" role="article">
+    <article class="box flex home-experience" role="article" name="work">
         <figure class="flex-2 flex-6-sm home-experience__figure">
-            <img class="home-experience__image" v-lazy="'/assets/images/experience-workshop.jpg'" alt="Henry Oliver" />
+            <img class="home-experience__image" src="/assets/images/experience-workshop.jpg" alt="Henry Oliver" />
             <figcaption class="home-experience__caption">Work<br>Experience</figcaption>
         </figure>
         <dl class="flex flex-4 flex-6-sm home-experience__descriptions">
             <dt class="flex-3 flex-6-sm home-experience__title">
+                <h3>Lead Software Engineer</h3>
+                <h4>PhotoDay <small>2018 - Current</small></h4>
+            </dt>
+            <dd class="flex-3 flex-6-sm home-experience__description"></dd>
+
+            <dt class="flex-3 flex-6-sm home-experience__title">
                 <h3>Lead front-end consultant</h3>
                 <h4>Concepta <small>2014 - 2018</small></h4>
             </dt>
-            <dd class="flex-3 flex-6-sm home-experience__description">Full-stack developer responsible for building and maintaining web and mobile sites and applications with emphasis on the user experience (UX) result</dd>
+            <dd class="flex-3 flex-6-sm home-experience__description"></dd>
+
             <dt class="flex-3 flex-6-sm home-experience__title">
                 <h3>Software/it project manager</h3>
                 <h4>E21 <small>2012 - 2014</small></h4>
             </dt>
-            <dd class="flex-3 flex-6-sm home-experience__description">Coordinator of the web and mobile development sector, responsible for assuring quality in the final delivery to the customer. Manager of the development team and responsible for implementing web best practices in their daily bases to enhance the quality of the final product.</dd>
+            <dd class="flex-3 flex-6-sm home-experience__description">Responsible for assuring quality in the final delivery to the customer. Manager of the development team and responsible for implementing web best practices in their daily bases to enhance the quality of the final product.</dd>
             <dt class="flex-3 flex-6-sm home-experience__title">
                 <h3>Software/it project manager</h3>
                 <h4>EMD - Digital Marketing Institute <small>2011 - 2013</small></h4>
@@ -262,7 +234,7 @@
     </aside>
 
     <!-- Contact -->
-    <section id="contact" class="box flex middle home-contact">
+    <section class="box flex middle home-contact" name="contact">
         <transition-group class="flex-2 flex-3-md flex-6-sm" name="fade" tag="div" mode="out-in">
             <form class="home-contact__form" accept-charset="UTF-8" v-if="status === null" :key="1" @submit.prevent="validate()">
                 <h2>Contact</h2>
@@ -273,7 +245,7 @@
                 <!-- Invisible reCAPTCHA -->
                 <div ref="recaptcha"></div>
             </form>
-            <aside class="flex column home-contact__confirm" v-if="status === 'success'" :key="2">
+            <aside class="flex column home-contact__confirm" v-if="status === 'success" :key="2">
                 <i class="icon-check"></i>
                 <p>Thanks for reaching out!<br> I'll get to you soon</p>
             </aside>
