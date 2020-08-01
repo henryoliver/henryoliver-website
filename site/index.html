@@ -26,7 +26,7 @@
         <a class="header__logo" href="/">H/O</a>
 
         <!-- Main navigation -->
-        <div class="navigation" v-click-outside="close">
+        <div class="navigation">
             <button class="button-hamburger navigation__hamburger"></button>
             <nav class="navigation__menu" role="navigation">
                 <a href="#about" class="navigation__link js-scroll">About</a>
@@ -40,6 +40,7 @@
         <nav class="header__social" role="navigation">
             <a href="https://github.com/henryoliver" class="header__icon" target="_blank"><i class="icon-github"></i></a>
             <a href="https://www.linkedin.com/in/henry-oliver" class="header__icon" target="_blank"><i class="icon-linkedin"></i></a>
+            <a href="https://twitter.com/henry_s_oliver" class="header__icon" target="_blank"><i class="icon-twitter"></i></a>
         </nav>
     </header>
 
@@ -115,30 +116,37 @@
                 <h3>Lead Software Engineer</h3>
                 <h4>PhotoDay <small>2018 - Current</small></h4>
             </dt>
-            <dd class="flex-3 flex-6-sm home-experience__description"></dd>
+            <dd class="flex-3 flex-6-sm home-experience__description">Important rule on implement best practices such as TDD and Clean Code (DRY/KISS), training front-end team on latest React API changes and leading it on developing and release version 2.0 of the product.</dd>
 
             <dt class="flex-3 flex-6-sm home-experience__title">
-                <h3>Lead front-end consultant</h3>
+                <h3>Consultant Front-End Architect</h3>
                 <h4>Concepta <small>2014 - 2018</small></h4>
             </dt>
-            <dd class="flex-3 flex-6-sm home-experience__description"></dd>
+            <dd class="flex-3 flex-6-sm home-experience__description">Architected, developed and maintained SPAs for clients like Disney, Warner Music Group, Orlando Citrus Club, Yellowstone Landscape and Florida Paints. Some of the recent technologies used are persistent NoSQL Databases, Node.JS, React, Vue.js and PWA development methodology.</dd>
 
             <dt class="flex-3 flex-6-sm home-experience__title">
-                <h3>Software/it project manager</h3>
+                <h3>Technical Project Manager</h3>
                 <h4>E21 <small>2012 - 2014</small></h4>
             </dt>
-            <dd class="flex-3 flex-6-sm home-experience__description">Responsible for assuring quality in the final delivery to the customer. Manager of the development team and responsible for implementing web best practices in their daily bases to enhance the quality of the final product.</dd>
+            <dd class="flex-3 flex-6-sm home-experience__description">Structured the team to achieve sustainable software delivery using a combination of Kanban lean methodology and agile Scrum framework. The results helped the agency to convince traditional offline clients into going online.</dd>
             <dt class="flex-3 flex-6-sm home-experience__title">
-                <h3>Software/it project manager</h3>
-                <h4>EMD - Digital Marketing Institute <small>2011 - 2013</small></h4>
+                <h3>Lead UX/UI Engineer</h3>
+                <h4>EMD - School of Digital Marketing <small>2011 - 2013</small></h4>
             </dt>
-            <dd class="flex-3 flex-6-sm home-experience__description">Managing the concept and design of the brand identity, responsible for the implementation of online teaching platform and maintenance of it with the development team.</dd>
-            <dt class="flex-3 flex-6-sm home-experience__title">
-                <h3>Application developer</h3>
-                <h4>Polen Digital Agency <small>2008 - 2010</small></h4>
-            </dt>
-            <dd class="flex-3 flex-6-sm home-experience__description">Responsible for the technology area and the web development. Front-end developer also.</dd>
+            <dd class="flex-3 flex-6-sm home-experience__description">Re-designed and developed the startup e-learning SaaS platform from ground-up with restrict resources and aggressive deadline. Technologies used are PHP (Laravel framework) and PostgreSQL for the back- end; and jQuery UI and Bootstrap for the front-end.</dd>
         </dl>
+    </article>
+
+    <!-- Workshops -->
+    <article class="box flex home-workshops" role="article" name="workshops">
+        <figure class="flex-3">
+            <img class="" src="/assets/images/workshops-pwa.jpg" alt="What Are Progressive WebApps" />
+            <figcaption class="">What Are Progressive WebApps</figcaption>
+        </figure>
+        <figure class="flex-3">
+            <img class="" src="/assets/images/workshops-npm.jpg" alt="Exploring 3D on the Web & Using NPM as a Build Tool" />
+            <figcaption class="">Exploring 3D on the Web & Using NPM as a Build Tool</figcaption>
+        </figure>
     </article>
 
     <!-- Skills -->
@@ -146,110 +154,43 @@
         <hgroup class="flex-2 flex-6-sm home-skills__title">
             <h1>Current Skills</h1>
         </hgroup>
-        <dl class="flex flex-4 flex-6-sm home-skills__descriptions">
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="96" max="100"></progress></dd>
-            <dt class="home-skills__skill">User Experience Design</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="90" max="100"></progress></dd>
-            <dt class="home-skills__skill">Responsive Web Design</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="88" max="100"></progress></dd>
-            <dt class="home-skills__skill">Sketch App</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="90" max="100"></progress></dd>
-            <dt class="home-skills__skill">HTML5 (& APIs) / CSS3 (& Animations)</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="82" max="100"></progress></dd>
-            <dt class="home-skills__skill">Atomic Design</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="86" max="100"></progress></dd>
-            <dt class="home-skills__skill">OOCSS/SMACS</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="88" max="100"></progress></dd>
-            <dt class="home-skills__skill">Sass/Less/Stylus</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="84" max="100"></progress></dd>
-            <dt class="home-skills__skill">Bootstrap & Foundation</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="90" max="100"></progress></dd>
-            <dt class="home-skills__skill">JavaScript</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="94" max="100"></progress></dd>
-            <dt class="home-skills__skill">React</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="84" max="100"></progress></dd>
-            <dt class="home-skills__skill">Angular</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="94" max="100"></progress></dd>
-            <dt class="home-skills__skill">Vue.js</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="82" max="100"></progress></dd>
-            <dt class="home-skills__skill">Flux</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="84" max="100"></progress></dd>
-            <dt class="home-skills__skill">Redux</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="86" max="100"></progress></dd>
-            <dt class="home-skills__skill">Mobx</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="86" max="100"></progress></dd>
-            <dt class="home-skills__skill">Vuex</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="84" max="100"></progress></dd>
-            <dt class="home-skills__skill">TDD & PDD</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="82" max="100"></progress></dd>
-            <dt class="home-skills__skill">CI</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="89" max="100"></progress></dd>
-            <dt class="home-skills__skill">Git</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="92" max="100"></progress></dd>
-            <dt class="home-skills__skill">Node.js</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="90" max="100"></progress></dd>
-            <dt class="home-skills__skill">npm</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="92" max="100"></progress></dd>
-            <dt class="home-skills__skill">REST</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="80" max="100"></progress></dd>
-            <dt class="home-skills__skill">GraphQL</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="84" max="100"></progress></dd>
-            <dt class="home-skills__skill">MongoDB</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="82" max="100"></progress></dd>
-            <dt class="home-skills__skill">Redis</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="88" max="100"></progress></dd>
-            <dt class="home-skills__skill">DevOps</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="90" max="100"></progress></dd>
-            <dt class="home-skills__skill">Amazon Web Services</dt>
-
-            <dd v-scroll-reveal.reset><progress class="bar fill-bar" value="84" max="100"></progress></dd>
-            <dt class="home-skills__skill">Google Cloud Platform</dt>
-        </dl>
+        <ul class="flex flex-4 flex-6-sm home-skills__descriptions">
+            <li class="home-skills__skill">HTML5 / CSS3</li>
+            <li class="home-skills__skill">User Experience Design</li>
+            <li class="home-skills__skill">JavaScript</li>
+            <li class="home-skills__skill">React</li>
+            <li class="home-skills__skill">Vue.js</li>
+            <li class="home-skills__skill">Svelte</li>
+            <li class="home-skills__skill">TDD & PDD</li>
+            <li class="home-skills__skill">CI</li>
+            <li class="home-skills__skill">Git</li>
+            <li class="home-skills__skill">Node.js</li>
+            <li class="home-skills__skill">REST architecture</li>
+            <li class="home-skills__skill">MongoDB</li>
+            <li class="home-skills__skill">Redis</li>
+            <li class="home-skills__skill">DevOps</li>
+            <li class="home-skills__skill">AWS</li>
+            <li class="home-skills__skill">Google Cloud</li>
+        </ul>
     </aside>
 
     <!-- Contact -->
     <section class="box flex middle home-contact" name="contact">
-        <transition-group class="flex-2 flex-3-md flex-6-sm" name="fade" tag="div" mode="out-in">
-            <form class="home-contact__form" accept-charset="UTF-8" v-if="status === null" :key="1" @submit.prevent="validate()">
+        <section class="flex-2 flex-3-md flex-6-sm">
+            <form class="home-contact__form js-form" accept-charset="UTF-7">
                 <h2>Contact</h2>
-                <input type="text" v-model.trim="contact.name" placeholder="Your name" maxlength="50" autocomplete="name" required/>
-                <input type="email" v-model.trim="contact.email" placeholder="Your email" maxlength="50" autocomplete="email" required />
-                <textarea name="textarea" v-model.trim="contact.message" placeholder="Message" rows="5" maxlength="144" required></textarea>
+                <input type="text" placeholder="Your name" maxlength="50" autocomplete="name" required/>
+                <input type="email" placeholder="Your email" maxlength="50" autocomplete="email" required />
+                <textarea name="textarea" placeholder="Message" rows="5" maxlength="144" required></textarea>
                 <button class="button button--bright button--block home-contact__submit" name="button" type="submit">Submit</button>
                 <!-- Invisible reCAPTCHA -->
                 <div ref="recaptcha"></div>
             </form>
-            <aside class="flex column home-contact__confirm" v-if="status === 'success" :key="2">
+            <aside class="flex column home-contact__confirm hidden js-thanks">
                 <i class="icon-check"></i>
                 <p>Thanks for reaching out!<br> I'll get to you soon</p>
             </aside>
-        </transition-group>
+        </section>
         <address class="flex-4 flex-3-md flex-6-sm self-start h-card home-contact__address">
             <span class="p-locality">Orlando, FL</span><br>
             <span class="p-tel"><strong>(407) two-six-seven 5932</strong></span><br>
